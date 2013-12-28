@@ -9,6 +9,7 @@ type iText = iTextPdf.com.itextpdf.text
 type PDF = iTextPdf.com.itextpdf.text.pdf
 type Main = javaTest2.Program
 type Student = javaTest2.Student
+type Building = javaTest2.Building
 
 let createPDF (filename:string) (contents:string) =
     let document = new iText.Document();
@@ -19,7 +20,7 @@ let createPDF (filename:string) (contents:string) =
     document.close()
 
 let createDemoPDF () =
-    let fname = @"D:\Programming\Projects\JavaFSharp\JavaFSharp\bin\Debug\test.pdf"
+    let fname = @"D:\Workspaces\javafsharp\output\test.pdf"
     createPDF fname "Hello, Java, from .NET"
     printfn "PDF written to %s" fname
     
@@ -28,5 +29,8 @@ let main argv =
     let s1 = Student()
     s1.Name <- "James"
     Main.main([|"hello";"arg1";"arg2"|])
+    let b1 = Building()
+    let x1 = b1.getInfo(1,2)
+    createDemoPDF()
     System.Console.ReadLine() |> ignore
     0 // return an integer exit code
