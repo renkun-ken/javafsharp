@@ -38,6 +38,9 @@
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="IKVM.OpenJDK.Beans">
+      <HintPath>..\packages\JavaTypeProvider.1.0.0\IKVM\bin\IKVM.OpenJDK.Beans.dll</HintPath>
+    </Reference>
     <Reference Include="IKVM.OpenJDK.Core">
       <HintPath>..\packages\JavaTypeProvider.1.0.0\IKVM\bin\IKVM.OpenJDK.Core.dll</HintPath>
     </Reference>
