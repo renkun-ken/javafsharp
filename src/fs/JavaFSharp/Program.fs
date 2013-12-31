@@ -31,7 +31,7 @@ let createDemoPDF () =
 let main argv = 
     let s1 = Student()
     s1.Name <- "James"
-    Main.main([|"hello";"arg1";"arg2"|])
+    Main.main([|"arg1";"arg2";"arg3"|])
     let b1 = Building()
     let x1 = b1.getInfo(1,2)
     createDemoPDF()
