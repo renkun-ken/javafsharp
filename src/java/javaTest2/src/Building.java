@@ -7,4 +7,7 @@ public class Building {
     public int getInfo(int x,int y) {
         return x+y;
     }
+    public void setName(String value) {
+        this.Name = value;
+    }
 }
